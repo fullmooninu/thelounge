@@ -1,7 +1,7 @@
 <h1 align="center">
 	<img
 		width="300"
-		alt="The Lounge"
+		alt="The Lounge - modded for ptnet"
 		src="https://raw.githubusercontent.com/thelounge/thelounge/master/client/img/logo-vertical-transparent-bg.svg?sanitize=true">
 </h1>
 
