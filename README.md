@@ -3,7 +3,8 @@
 		width="300"
 		alt="The Lounge"
 		src="https://raw.githubusercontent.com/thelounge/thelounge/master/client/img/logo-vertical-transparent-bg.svg?sanitize=true">	
-modded for ptnet (check my commits on the commit history for instructions)
+
+Modded for ptnet (check my commits on the commit history for instructions)
 </h1>
 
 <h3 align="center">
