@@ -52,8 +52,12 @@
 			<aside id="sidebar">
 				<div class="scrollable-area">
 					<div class="logo-container">
-						<img src="img/logo-<%- public ? 'horizontal-' : '' %>transparent-bg.svg" class="logo" alt="The Lounge">
-						<img src="img/logo-<%- public ? 'horizontal-' : '' %>transparent-bg-inverted.svg" class="logo-inverted" alt="The Lounge">
+						<!-- 
+						  <img src="img/logo-<%- public ? 'horizontal-' : '' %>transparent-bg.svg" class="logo" alt="The Lounge">
+						  <img src="img/logo-<%- public ? 'horizontal-' : '' %>transparent-bg-inverted.svg" class="logo-inverted" alt="The Lounge">
+						-->
+						<img src="img/ptnet_transparente.png" width="100px"class="logo">
+						<img src="img/ptnet_black_transparente.png" width="100px" class"logo-inverted">
 					</div>
 					<div class="networks"></div>
 					<div class="empty">

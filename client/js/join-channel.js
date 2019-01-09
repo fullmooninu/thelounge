@@ -75,8 +75,9 @@ function handleKeybinds(networks) {
 
 		form.on("submit", () => {
 			const networkElement = form.closest(".network");
-			const channel = form.find("input[name='channel']").val();
-			const key = form.find("input[name='key']").val();
+			let channel = form.find("input[name='channel']").val();
+			if (!channel.startsWith('#')) channel = '#' + channel;
+		        const key = form.find("input[name='key']").val();
 			const existingChannel = utils.findCurrentNetworkChan(channel);
 
 			if (existingChannel.length) {

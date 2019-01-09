@@ -221,12 +221,20 @@ function passwordCompare(password, expected) {
 	return bcrypt.compare(password, expected);
 }
 
-function getDefaultNick() {
-	if (!this.config.defaults.nick) {
-		return "thelounge";
-	}
+function getRandomFromArr(array1) {
+	return array1[Math.floor(Math.random() * array1.length)];
+}
 
-	return this.config.defaults.nick.replace(/%/g, () => Math.floor(Math.random() * 10));
+function getDefaultNick() {
+	let fruitArr = ["apple","apricot","avocado","banana","berry","cantaloupe","cherry","citron","citrus","coconut","date",
+		"fig","grape","guava","kiwi","lemon","lime","mango","melon","nectarine","orange","papaya","peach","pear","pineapple","plum","prune",
+		"raisin","raspberry","tangerine"];
+
+	let colorArr = ["Red","Blue","Yellow","Orange","Green","Violet"];
+
+	let returnedNick = getRandomFromArr(fruitArr) + getRandomFromArr(colorArr);
+
+	return returnedNick + Math.floor(Math.random() * 100);
 }
 
 function mergeConfig(oldConfig, newConfig) {
